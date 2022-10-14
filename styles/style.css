@@ -1,0 +1,264 @@
+:root{
+    --light-purple: #8E7BEF;
+    --purple: #5d3bef;
+    --gray3: #f9f6ff;
+    --black: #222222;
+    --gray1: #423f40;
+    --white: #ffffff;
+    --gray2: #f9f5f2;
+    --title: 150px;
+    --subtitle: 50px;
+    --body: 18px;
+    --regular: 400;
+    --semiblod: 600;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+  
+  *,*:before,*:after {
+    box-sizing: inherit;
+}
+
+/*Ullity*/
+
+.center{
+    text-align: center;
+}
+
+/*------*/
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--body);
+    font-weight: var(--regular);
+    color: var(--black);
+    margin: 0;
+    position: relative;
+    overflow-x: none;
+}
+
+header{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+main{
+    width: 75%;
+    margin: auto;
+}
+
+/*------*/
+
+.nav-bar{
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    text-decoration: none;
+    color: var(--black);
+    gap: 70px;
+}
+
+header nav ul a{
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+/*------*/
+
+.profile{
+    display: flex;
+    margin-top: 5%;
+}
+
+.info{
+    margin-left: 12%;
+}
+
+.icons{
+    display: flex;
+    justify-content: start;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--light-purple);
+    border-radius: 50px;
+    margin: 15px;
+}
+
+/*------*/
+
+.about{
+    margin-top: 50px;
+    color: var(--gray);
+    margin-bottom: 45px;
+    }
+    
+/*------*/
+
+.skills .boxes{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box{
+    background-color: var(--gray3);
+    width: 15%;
+}
+
+.box p{
+    font-size: 10px;
+    margin-bottom: 50px;
+}
+
+/*------*/
+
+.exp .exp-info{
+    margin: auto;
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.exp p{
+    font-size: 15px;
+}
+
+/*----------*/
+
+.circle{
+    fill: none;
+    background-color: var(--gray2);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.cards{
+    display: flex;
+}
+
+.contact .cards{
+    margin: auto;
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*----------*/
+
+h1{
+    font-size: 80px;
+    font-weight: var(--semiblod);
+    margin: 10px 0 10px 0;
+}
+
+h2{
+    font-size: var(--subtitle);
+    font-weight: var(--semiblod);
+}
+
+p{
+    justify-content: center;
+    color: var(--gray1);
+}
+
+/*----------*/
+
+@media(max-width:480px){
+
+    body{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: var(--regular);
+        color: var(--black);
+        margin: 0;
+        position: relative;
+        overflow-x: none;
+    }
+
+    header nav ul{
+        display: none;
+    }
+
+    .mobile-menu{
+        display: flex;
+        margin-top: 10px;
+    }
+
+    h1{
+        font-size: 50px;
+        font-weight: var(--semiblod);
+    }
+
+    h2{
+        font-size: 24px;
+        font-weight: var(--semiblod);
+    }
+
+    p{
+        font-size: 10px;
+    }
+
+    .pic{
+        width: 120%;
+        text-align: left;
+    }
+
+    .profile{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills .boxes{
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+    }
+
+    .box{
+        width: 100%;
+    }
+
+    .exp1{
+        margin: 20px;
+    }
+
+    .exp2{
+        margin: 20px;
+    }
+
+    .exp3{
+        margin: 20px;
+    }
+
+    .porta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact .cards{
+        display: flex;
+        flex-direction: column;
+    }
+}
